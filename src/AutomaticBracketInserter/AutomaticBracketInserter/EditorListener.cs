@@ -3,6 +3,7 @@ using Microsoft.VisualStudio.Language.Intellisense.AsyncCompletion.Data;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Operations;
 using Microsoft.VisualStudio.Utilities;
+using System.Collections.Generic;
 using System.ComponentModel.Composition;
 
 namespace AutomaticBracketInserter
@@ -50,9 +51,10 @@ namespace AutomaticBracketInserter
                 return false;
             }
 
+            var allowedMethods = new Dictionary<string, string>() { { "m", "Methods" }, { "x", "Extension methods" } };
             foreach (var item in itemEventArgs.Item.Filters)
             {
-                if (item.AccessKey == "m" && item.DisplayText == "Methods")
+                if (allowedMethods.ContainsKey(item.AccessKey) && allowedMethods[item.AccessKey] == item.DisplayText)
                 {
                     return true;
                 }
