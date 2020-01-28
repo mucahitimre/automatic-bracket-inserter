@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" ?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="AutomaticBracketInserter.13cba0ff-129f-4839-a752-bee9044bf1d8" Version="1.0" Language="en-US" Publisher="Mücahit imre" />
+        <Identity Id="AutomaticBracketInserter.13cba0ff-129f-4839-a752-bee9044bf1d8" Version="1.1" Language="en-US" Publisher="Mücahit imre" />
         <DisplayName>AutomaticBracketInserter</DisplayName>
         <Description xml:space="preserve">Visual studio extension that adds auto parentheses for C# methods</Description>
         <License>LICENSE.txt</License>

@@ -39,8 +39,8 @@ namespace AutomaticBracketInserter
             if (TryIsChooseMethod(itemEventArgs))
             {
                 EditorOperations = _editorOperationsFactory.GetEditorOperations(TextView);
-                string wrappedSelectionText = "()";
-                EditorOperations.InsertText(wrappedSelectionText);
+                string parenthesis = "()";
+                EditorOperations.InsertText(parenthesis);
             }
         }
 
